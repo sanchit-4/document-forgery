@@ -15,7 +15,7 @@ This repository contains the official implementation of the Universal Forensic M
 
 ---
 
-## 📜 Table of Contents
+##  Table of Contents
 
 - Abstract  
 - Architecture  
@@ -32,7 +32,7 @@ This repository contains the official implementation of the Universal Forensic M
 
 ---
 
-## 💡 Abstract
+##  Abstract
 
 The rise of Generative AI has rendered traditional JPEG-compression and noise-analysis forensic methods obsolete. ForensicDINO addresses this by leveraging DINOv2 (ViT-Large) as a semantic backbone, fused with a Constrained Convolutional (BayarConv) forensic branch.
 
@@ -46,7 +46,7 @@ We achieve **0.99 AUC** on the SIDTD benchmark and **0.59 IoU** on forensic loca
 
 ---
 
-## 🧠 Architecture
+##  Architecture
 
 The model utilizes a **"Hydra" architecture** with three specific heads.
 
@@ -63,7 +63,7 @@ This suppresses image content (text/faces) and highlights sensor pattern noise a
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
 - **Universal Detection:** Handles both Photoshop-style edits and Diffusion-generated documents.  
 - **Explainable AI:** Generates heatmaps showing manipulated regions.  
@@ -72,7 +72,7 @@ This suppresses image content (text/faces) and highlights sensor pattern noise a
 
 ---
 
-## 📊 Dataset & Preparation
+##  Dataset & Preparation
 
 We utilize the SIDTD (Synthetic Identity Document) dataset + custom Generative AI subset.
 
@@ -108,7 +108,7 @@ This generates crops, metadata JSONs, and appends them to the training CSV with 
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
     # Clone the repository
     git clone https://github.com/yourusername/ForensicDINO.git
@@ -126,7 +126,7 @@ Requirements: torch, albumentations, opencv-python, pandas, tqdm, scikit-learn.
 
 ---
 
-## 🚀 Usage
+##  Usage
 
 ### 1. Training
 
@@ -160,7 +160,7 @@ Visual logs → ./training_visuals/
 
 ---
 
-## 📈 Results
+##  Results
 
 ### Quantitative Metrics
 
@@ -178,7 +178,7 @@ Original Fake | Raw Heatmap | Prediction Overlay
 
 ---
 
-## ⚠️ Limitations & Future Work
+##  Limitations & Future Work
 
 - Resolution Sensitivity: Images resized to 518×518 may lose micro-edits  
 - Domain Shift: Noisy smartphone images can cause false positives  
